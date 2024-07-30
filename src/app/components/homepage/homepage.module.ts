@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ShakingTextComponent } from 'src/app/shared/shaking-text/shaking-text.component';
 import { ServiceCardComponent } from 'src/app/shared/service-card/service-card.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 @NgModule({
   imports: [CommonModule, BrowserAnimationsModule],
@@ -18,7 +19,8 @@ import { ServiceCardComponent } from 'src/app/shared/service-card/service-card.c
     AboutComponent,
     ServicesComponent,
     ShakingTextComponent,
-    ServiceCardComponent
+    ServiceCardComponent,
+    ReviewsComponent
   ],
   exports: [HomepageComponent],
 })

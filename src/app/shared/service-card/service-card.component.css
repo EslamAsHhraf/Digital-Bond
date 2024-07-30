@@ -40,12 +40,12 @@
 
 .card-wrap:hover .card {
   transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
-  /* box-shadow:
+  box-shadow:
     rgba(0, 0, 0, 0.2) 0 0 40px 5px,
     rgba(255, 79, 129, 1) 0 0 0 1px,
     rgba(0, 0, 0, 0.66) 0 30px 30px 0,
     inset #424242 0 0 0 5px,
-    inset rgba(255, 79, 129, 1) 0 0 0 6px; */
+    inset rgba(255, 79, 129, 1) 0 0 0 6px;
 }
 
 .card {

@@ -1,8 +1,13 @@
-<section id="services">
-  <div class="flex-1 flex items-center justify-center p-4 mb-4 mt-5" >
+<section id="services" class="min-h-[482px]">
+  <div class="flex-1 flex items-center justify-center p-4 mb-4 mt-24">
     <app-shaking-text content="Services"></app-shaking-text>
   </div>
-  <div class="flex flex-wrap justify-center items-center mb-5">
-  <app-service-card *ngFor="let item of cards" [cardInput]="item"></app-service-card>
+
+  <div class="flex flex-wrap justify-center items-center  gap-4">
+    <app-service-card
+      *ngFor="let item of cards"
+      [cardInput]="item"
+    ></app-service-card>
   </div>
+
 </section>
