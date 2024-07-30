@@ -7,6 +7,7 @@ import { FeatureCardComponent } from 'src/app/shared/feature-card/feature-card.c
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ShakingTextComponent } from 'src/app/shared/shaking-text/shaking-text.component';
+import { ServiceCardComponent } from 'src/app/shared/service-card/service-card.component';
 
 @NgModule({
   imports: [CommonModule, BrowserAnimationsModule],
@@ -16,7 +17,8 @@ import { ShakingTextComponent } from 'src/app/shared/shaking-text/shaking-text.c
     FeatureCardComponent,
     AboutComponent,
     ServicesComponent,
-    ShakingTextComponent
+    ShakingTextComponent,
+    ServiceCardComponent
   ],
   exports: [HomepageComponent],
 })

@@ -1,11 +1,8 @@
 <section id="services">
-  <div class="flex-1 flex items-center justify-center p-4">
-    <!-- <p
-    (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()" [class.shake]="isShaking"
-      class="font-poppins font-normal xs:text-[39.45px] text-[15.45px] xs:leading-[30.58px] leading-[21.58px] text-gradient uppercase"
-    >
-      About Us
-    </p> -->
+  <div class="flex-1 flex items-center justify-center p-4 mb-4 mt-5" >
     <app-shaking-text content="Services"></app-shaking-text>
+  </div>
+  <div class="flex flex-wrap justify-center items-center mb-5">
+  <app-service-card *ngFor="let item of cards" [cardInput]="item"></app-service-card>
   </div>
 </section>
