@@ -3,7 +3,6 @@ import {
   OnInit,
   ElementRef,
   HostListener,
-  AfterViewInit,
 } from '@angular/core';
 import { FeatureCard } from 'src/app/models/feature-card';
 
@@ -46,13 +45,7 @@ export class AboutComponent implements OnInit {
     this.element = this.el.nativeElement.querySelector('.animate-from-left');
     this.checkVisibility();
   }
-  onMouseEnter() {
-    this.isShaking = true;
-  }
 
-  onMouseLeave() {
-    this.isShaking = false;
-  }
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {

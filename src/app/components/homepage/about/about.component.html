@@ -1,19 +1,12 @@
 <section id="about">
   <div class="flex-1 flex items-center justify-center p-4">
-    <p
-    (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()" [class.shake]="isShaking"
-      class="font-poppins font-normal xs:text-[39.45px] text-[15.45px] xs:leading-[30.58px] leading-[21.58px] text-gradient uppercase"
-    >
-      About Us
-    </p>
+    <app-shaking-text content="About Us"></app-shaking-text>
   </div>
   <div class="flex md:flex-row flex-col sm:py-16 py-6 animate-from-left" #animateDiv>
     <div class="flex-1 flex justify-center items-start flex-col">
       <h2
         class="font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full"
       >
-        <!-- You do the business, <br class="sm:block hidden" /> we’ll handle the
-      money. -->
         We are the Bonders!
       </h2>
       <p
@@ -21,7 +14,6 @@
       >
         Digital Bond is a forward-thinking digital marketing agency that blends creativity with a commitment to push brands beyond their limits. We offer a wide range of services designed to elevate brand presence and performance.
       </p>
-      <!-- <Button styles={`mt-10`} /> -->
     </div>
     <div class="flex-1 flex md:ml-10 ml-0 md:mt-0 mt-10 relative flex-col">
       <ng-container *ngFor="let feature of features; let index = index">
