@@ -25,20 +25,14 @@
     </p>
   </div>
 
-  <div
-    class="flex-1 flex flex justify-center items-center md:my-0 my-10 relative"
-  >
-    <img
-      [src]="currentImage.src"
-      [alt]="currentImage.alt"
-      class=" w-[currentImage.width] h-[currentImage.height] relative z-[5]"
-    />
-    <!-- <img
-          src="assets/hero-3.png"
-          alt="billing"
-          class=" w-[40%] h-[80%] relative z-[5] "
-        /> -->
-
+  <div class="flex-1 flex justify-center items-center md:my-0 my-10 relative">
+    <div *ngIf="showImage" @fadeInOut>
+      <img
+        [src]="currentImage.src"
+        [alt]="currentImage.alt"
+        class="h-[500px] relative z-[5]"
+      />
+    </div>
     <div class="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient"></div>
     <div
       class="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40"
@@ -48,5 +42,12 @@
     ></div>
   </div>
 
-  <div class="ss:hidden flex justify-center items-center"></div>
+  <div class="ss:hidden flex justify-center items-center "></div>
 </section>
+<!-- <div class="flex items-center justify-center mb-2">
+    <p
+      class="font-poppins font-normal xs:text-[20.45px] text-[15.45px] xs:leading-[26.58px] leading-[21.58px] text-gradient uppercase ml-3"
+    >
+      Bonding in the Digital Realm
+    </p>
+  </div> -->
