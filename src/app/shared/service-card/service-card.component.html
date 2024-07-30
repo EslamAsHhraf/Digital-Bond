@@ -1,0 +1,10 @@
+<div #card class="card-wrap">
+  <div class="card" [ngStyle]="cardStyle()">
+    <div class="card-bg" [ngStyle]="cardBgTransform()">
+      <div class="image-placeholder">
+        <img class="w-[120px]  max-w-[120px] max-h-[120px]  h-[120px] object-cover" [src]="cardInput.image" />
+        <p class="text-center mt-2">{{cardInput.title}}</p>
+      </div>
+    </div>
+  </div>
+</div>
