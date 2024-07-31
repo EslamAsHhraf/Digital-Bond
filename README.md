@@ -12,7 +12,7 @@
     <br> 
 </p>
 
-## <img align= center width=50px height=50px src="https://thumbs.gfycat.com/HeftyDescriptiveChimneyswift-size_restricted.gif"> Table of Contents
+## Table of Contents
 
 - <a href ="#about"> 📙 Overview</a>
 - <a href ="#started"> 💻 Get Started</a>
