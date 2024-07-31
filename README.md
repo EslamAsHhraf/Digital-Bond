@@ -1,27 +1,91 @@
-# DigitalBond
+<div align= >
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+# Digital Bond
 
-## Development server
+</div>
+<div align="center">
+   <img align="center"  width="400px" src="https://www.digitalbondmena.com/assets/images/Logo_V2.gif" alt="logo">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+</div>
+ 
+<p align="center"> 
+    <br> 
+</p>
 
-## Code scaffolding
+## <img align= center width=50px height=50px src="https://thumbs.gfycat.com/HeftyDescriptiveChimneyswift-size_restricted.gif"> Table of Contents
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- <a href ="#about"> 📙 Overview</a>
+- <a href ="#started"> 💻 Get Started</a>
+- <a href ="#contributors"> ✨ Contributors</a>
+- <a href ="#license"> 🔒 License</a>
+<hr style="background-color: #4b4c60"></hr>
 
-## Build
+## <img align="center"  height =80px src="https://media0.giphy.com/media/QpyF0jsO26GWKTWctv/giphy.gif?cid=ecf05e4798htjpzjtz6oqwrnlqle5wc1hlauten94gurm6i6&ep=v1_stickers_search&rid=giphy.gif&ct=s"> Overview <a id = "about"></a>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<ul>
+<li>The project is built by
+<ol>
+<li>
+<a href="https://angular.io/">Angular</a> 
+</li>
+<li>
+<a href="https://primeng.org/">PrimNG</a>
+</li>
+<li>
+<a href="https://firebase.google.com/">Firebase</a> 
+</li>
+<li>
+<a href="https://eslint.org/">Eslint</a> 
+</li>
+</ol>
+</li>
+<br>
+<li>
+You can view
+<a href="https://eslamashhraf.github.io/Digital-Bond/">Digital Bond</a>
 
-## Running unit tests
+</li>
+</ul>
+<hr style="background-color: #4b4c60"></hr>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## <img  align= center width=50px height=50px src="https://c.tenor.com/HgX89Yku5V4AAAAi/to-the-moon.gif"> Get Started <a id = "started"></a>
 
-## Running end-to-end tests
+<ol>
+<li>Clone the repository
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<br>
 
-## Further help
+```
+git clone https://github.com/EslamAsHhraf/Digital-Bond
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+</li>
+<li>Install packages
+
+<br>
+
+```
+npm install
+```
+
+</li>
+<li>Run the program
+
+<br>
+
+```
+npm run start
+```
+
+</li>
+</ol>
+
+<hr style="background-color: #4b4c60"></hr>
+
+## <img  align="center" width= 70px height =55px src="https://media0.giphy.com/media/Xy702eMOiGGPzk4Zkd/giphy.gif?cid=ecf05e475vmf48k83bvzye3w2m2xl03iyem3tkuw2krpkb7k&rid=giphy.gif&ct=s"> Contributors <a id ="contributors"></a>
+
+<table >
+  <tr>
+        <td align="center"><a href="https://github.com/EslamAsHhraf"><img src="https://avatars.githubusercontent.com/u/71986226?v=4" width="150px;" alt=""/><br /><sub><b>Eslam Ashraf</b></sub></a><br /></td>
+  </tr>
+</table>
