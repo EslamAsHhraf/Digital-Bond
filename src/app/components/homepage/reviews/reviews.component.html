@@ -1,11 +1,58 @@
-<section id="reviews" class="relative">
- <div
+<section id="reviews" class="relative mt-20">
+  <div
     class="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient"
   ></div>
   <div
     class="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient"
   ></div>
-  <div class="mt-3 flex-1 flex items-center justify-center p-4">
+  <div class="mt-3 flex-1 flex items-center justify-center p-4 flex-col">
     <app-shaking-text content="Reviews"></app-shaking-text>
+    <div class=" xl:max-w-[1200px] w-full mt-12 flex items-center content-center">
+      <p-carousel
+        [value]="reviews"
+        [numVisible]="3"
+        [numScroll]="1"
+        [responsiveOptions]="responsiveOptions"
+        autoplayInterval="3000"
+        class="cards-container xl:max-w-[1000px] w-full"
+      >
+        <ng-template let-review pTemplate="item">
+          <div
+            class="min-h-[430px] flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[370px] feedback-card"
+          >
+            <img
+              src="assets/quotes.svg"
+              alt="double_quotes"
+              class="w-[42.6px] h-[27.6px] object-contain"
+            />
+            <p
+              class="font-poppins font-normal text-[18px] leading-[32.4px] text-white my-10"
+            >
+              {{review.review}}
+            </p>
+
+            <div class="flex flex-row">
+              <img
+                [src]="review.image"
+                [alt]="review.name"
+                class="w-[48px] h-[48px] rounded-full"
+              />
+              <div class="flex flex-col ml-4 self-end">
+                <h4
+                  class="font-poppins font-semibold text-[20px] leading-[32px] text-white"
+                >
+                  {{review.name}}
+                </h4>
+                <p
+                  class="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite"
+                >
+                  {{review.title }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
   </div>
 </section>

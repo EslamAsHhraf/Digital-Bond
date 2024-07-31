@@ -1,0 +1,4 @@
+.cards-container ::ng-deep .p-carousel-prev , .cards-container ::ng-deep .p-carousel-next {
+  background-color: white;
+  color: black;
+}

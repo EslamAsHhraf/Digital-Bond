@@ -1,15 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Review } from 'src/app/models/review';
 @Component({
   selector: 'app-reviews',
   templateUrl: './reviews.component.html',
   styleUrls: ['./reviews.component.css'],
 })
 export class ReviewsComponent implements OnInit {
+  responsiveOptions: any[] | undefined;
+
   constructor() {}
 
-  ngOnInit() {}
-  reviews = [
+  ngOnInit() {
+    this.responsiveOptions = [
+      {
+        breakpoint: '1100px',
+        numVisible: 2,
+        numScroll: 1,
+      },
+      {
+        breakpoint: '950px',
+        numVisible: 1,
+        numScroll: 1,
+      },
+    ];
+  }
+  reviews: Review[] = [
     {
       name: 'Mostafa',
       title: 'Business Owner',
@@ -36,12 +51,14 @@ export class ReviewsComponent implements OnInit {
       title: 'CTO',
       review:
         'Competent, professional and engaged team on managerial and individual levels.',
+      image: 'assets/people01.png',
     },
     {
       name: 'Nada',
       title: 'Marketing Team Lead',
       review:
         'We have a growing relationship with Digital Bond and they continually bring more ideas and resources to our company.',
+      image: 'assets/people01.png',
     },
   ];
 }
