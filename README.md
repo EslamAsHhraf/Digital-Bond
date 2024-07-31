@@ -17,7 +17,6 @@
 - <a href ="#about"> 📙 Overview</a>
 - <a href ="#started"> 💻 Get Started</a>
 - <a href ="#contributors"> ✨ Contributors</a>
-- <a href ="#license"> 🔒 License</a>
 <hr style="background-color: #4b4c60"></hr>
 
 ## <img align="center"  height =80px src="https://media0.giphy.com/media/QpyF0jsO26GWKTWctv/giphy.gif?cid=ecf05e4798htjpzjtz6oqwrnlqle5wc1hlauten94gurm6i6&ep=v1_stickers_search&rid=giphy.gif&ct=s"> Overview <a id = "about"></a>
