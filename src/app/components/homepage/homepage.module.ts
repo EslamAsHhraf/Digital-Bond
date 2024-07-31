@@ -9,9 +9,10 @@ import { ServicesComponent } from './services/services.component';
 import { ShakingTextComponent } from 'src/app/shared/shaking-text/shaking-text.component';
 import { ServiceCardComponent } from 'src/app/shared/service-card/service-card.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
-  imports: [CommonModule, BrowserAnimationsModule],
+  imports: [CommonModule, BrowserAnimationsModule, CarouselModule],
   declarations: [
     HomepageComponent,
     HeroComponent,
