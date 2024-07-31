@@ -10,6 +10,7 @@ import { ShakingTextComponent } from 'src/app/shared/shaking-text/shaking-text.c
 import { ServiceCardComponent } from 'src/app/shared/service-card/service-card.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { CarouselModule } from 'primeng/carousel';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports: [CommonModule, BrowserAnimationsModule, CarouselModule],
@@ -22,6 +23,7 @@ import { CarouselModule } from 'primeng/carousel';
     ShakingTextComponent,
     ServiceCardComponent,
     ReviewsComponent,
+    ContactComponent
   ],
   exports: [HomepageComponent],
 })
