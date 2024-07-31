@@ -46,12 +46,12 @@ export class AboutComponent implements OnInit {
     this.checkVisibility();
   }
 
-
   @HostListener('window:scroll', ['$event'])
   onScroll() {
     this.checkVisibility();
   }
 
+  // function to handle visibility of elements
   private checkVisibility() {
     if (!this.element) {
       return;

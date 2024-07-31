@@ -9,10 +9,11 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
     this.handleScroll();
   }
-  active: string = 'Home';
-  toggle: boolean = false;
-  scrolled: boolean = false;
+  active: string = 'Home'; // default active link
+  toggle: boolean = false; // toggle for mobile menu
+  scrolled: boolean = false; // bool for scroll event
 
+  // links
   navLinks = [
     {
       id: 'home',
@@ -36,10 +37,12 @@ export class NavbarComponent implements OnInit {
     },
   ];
 
+  // set active link
   setActive(navTitle: string): void {
     this.active = navTitle;
   }
 
+  // toggle mobile menu
   toggleMenu(): void {
     this.toggle = !this.toggle;
   }
@@ -49,6 +52,7 @@ export class NavbarComponent implements OnInit {
     this.handleScroll();
   }
 
+  // function to check scroll event and change navbar style
   private handleScroll() {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     if (scrollTop > 100) {

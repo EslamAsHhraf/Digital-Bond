@@ -29,6 +29,7 @@ export class HeroComponent implements OnInit {
   private intervalId: any;
 
   ngOnInit(): void {
+    // switch images every 4 seconds
     this.intervalId = setInterval(() => {
       this.showImage = false;
 
@@ -56,6 +57,7 @@ export class HeroComponent implements OnInit {
   }
 
   ngOnDestroy(): void {
+    // clear interval on destroy
     if (this.intervalId) {
       clearInterval(this.intervalId);
     }

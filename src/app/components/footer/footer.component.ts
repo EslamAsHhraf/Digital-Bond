@@ -73,6 +73,8 @@ export class FooterComponent implements OnInit {
       link: 'https://www.tiktok.com/@digitalbondmena',
     },
   ];
+
+  // function to open links in new tab
   openLink(url: string): void {
     window.open(url, '_blank');
   }
