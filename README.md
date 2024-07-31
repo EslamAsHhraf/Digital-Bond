@@ -34,9 +34,6 @@
 <li>
 <a href="https://firebase.google.com/">Firebase</a> 
 </li>
-<li>
-<a href="https://eslint.org/">Eslint</a> 
-</li>
 </ol>
 </li>
 <br>
