@@ -51,14 +51,14 @@ export class ReviewsComponent implements OnInit {
       title: 'CTO',
       review:
         'Competent, professional and engaged team on managerial and individual levels.',
-      image: 'assets/people01.png',
+      image: 'assets/people04.png',
     },
     {
       name: 'Nada',
       title: 'Marketing Team Lead',
       review:
         'We have a growing relationship with Digital Bond and they continually bring more ideas and resources to our company.',
-      image: 'assets/people01.png',
+      image: 'assets/people05.png',
     },
   ];
 }
