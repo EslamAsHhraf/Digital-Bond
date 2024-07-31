@@ -1,48 +1,59 @@
-<nav class="w-full flex py-3 justify-between items-center">
-  <img src="assets/logo.webp" alt="logo" class="w-[70] h-[55px]" />
+<div   [ngClass]="{ 'bg-primary fixed': scrolled, 'bg-transparent': !scrolled }" class="w-full sm:px-16 px-6  top-0 justify-center items-center  z-20 flex">
+  <div  class="xl:max-w-[1280px] w-full">
+    <nav
 
-  <ul class="list-none sm:flex hidden justify-end items-center flex-1">
-    <li *ngFor="let nav of navLinks; let i = index"
-        [ngClass]="{
-          'font-poppins font-normal cursor-pointer text-[16px]': true,
-          'text-white': active === nav.title,
-          'text-dimWhite': active !== nav.title,
-          'mr-0': i === navLinks.length - 1,
-          'mr-10': i !== navLinks.length - 1
-        }"
-        (click)="setActive(nav.title)">
-      <a [href]="'#' + nav.id">{{ nav.title }}</a>
-    </li>
-  </ul>
-
-  <div class="sm:hidden flex flex-1 justify-end items-center">
-    <img
-      [src]="toggle ? 'assets/close.svg' : 'assets/menu.svg'"
-      alt="menu"
-      class="w-[28px] h-[28px] object-contain"
-      (click)="toggleMenu()"
-    />
-
-    <div
-      [ngClass]="{
-        'hidden': !toggle,
-        'flex': toggle
-      }"
-      class="p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar"
+      class=" w-full flex py-3 justify-between items-center"
     >
-      <ul class="list-none flex justify-end items-start flex-1 flex-col">
-        <li *ngFor="let nav of navLinks; let i = index"
+        <img src="assets/logo.webp" alt="logo" class="w-[70] h-[55px]" />
+
+        <ul class="list-none sm:flex hidden justify-end items-center flex-1">
+          <li
+            *ngFor="let nav of navLinks; let i = index"
             [ngClass]="{
-              'font-poppins font-medium cursor-pointer text-[16px]': true,
+              'font-poppins font-normal cursor-pointer text-[16px]': true,
               'text-white': active === nav.title,
               'text-dimWhite': active !== nav.title,
-              'mb-0': i === navLinks.length - 1,
-              'mb-4': i !== navLinks.length - 1
+              'mr-0': i === navLinks.length - 1,
+              'mr-10': i !== navLinks.length - 1
             }"
-            (click)="setActive(nav.title)">
-          <a [href]="'#' + nav.id">{{ nav.title }}</a>
-        </li>
-      </ul>
-    </div>
+            (click)="setActive(nav.title)"
+          >
+            <a [href]="'#' + nav.id">{{ nav.title }}</a>
+          </li>
+        </ul>
+
+        <div class="sm:hidden flex flex-1 justify-end items-center">
+          <img
+            [src]="toggle ? 'assets/close.svg' : 'assets/menu.svg'"
+            alt="menu"
+            class="w-[28px] h-[28px] object-contain"
+            (click)="toggleMenu()"
+          />
+
+          <div
+            [ngClass]="{
+              hidden: !toggle,
+              flex: toggle
+            }"
+            class="p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar"
+          >
+            <ul class="list-none flex justify-end items-start flex-1 flex-col">
+              <li
+                *ngFor="let nav of navLinks; let i = index"
+                [ngClass]="{
+                  'font-poppins font-medium cursor-pointer text-[16px]': true,
+                  'text-white': active === nav.title,
+                  'text-dimWhite': active !== nav.title,
+                  'mb-0': i === navLinks.length - 1,
+                  'mb-4': i !== navLinks.length - 1
+                }"
+                (click)="setActive(nav.title)"
+              >
+                <a [href]="'#' + nav.id">{{ nav.title }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
   </div>
-</nav>
+</div>
