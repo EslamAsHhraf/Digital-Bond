@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarModule } from './components/navbar/navbar.module';
 import { HomepageModule } from "./components/homepage/homepage.module";
 import { CommonModule } from '@angular/common';
+import { FooterModule } from './components/footer/footer.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { CommonModule } from '@angular/common';
     NavbarModule,
     HomepageModule,
     CommonModule,
+    FooterModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
